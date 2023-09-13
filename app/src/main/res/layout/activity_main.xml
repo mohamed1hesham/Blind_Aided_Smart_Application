@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/headertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Solution"
+        android:contentDescription="It's Our Smart Application,Here for help you can click more down to select your model"
+        android:textColor="#E5D3B3"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/textBtn"
+        android:layout_width="200dp"
+        android:textColor="@color/black"
+        android:layout_height="75dp"
+        android:layout_below="@+id/headertxt"
+        android:background="@drawable/button_background1"
+        android:text="Text To Speech"
+        android:textAllCaps="false"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+
+        />
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/emotionsBtn"
+    android:layout_width="200dp"
+    android:layout_height="75dp"
+    android:layout_below="@+id/textBtn"
+    android:background="@drawable/button_background1"
+    android:text="Emotions"
+    android:textAllCaps="false"
+
+    android:textColor="@color/black"
+    android:layout_marginTop="45dp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:textSize="25sp"
+
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/MoneyBtn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/emotionsBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_background2"
+
+        android:textColor="@color/black"
+        android:text="Money"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FruitBtn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/MoneyBtn"
+        android:background="@drawable/button_background1"
+        android:text="Fruits"
+        android:textAllCaps="false"
+
+        android:textColor="@color/black"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CommonBtn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/FruitBtn"
+        android:textColor="@color/black"
+        android:background="@drawable/button_background1"
+        android:text="Common Things"
+        android:textAllCaps="false"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+
+        />
+
+</RelativeLayout>

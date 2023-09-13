@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonThingsActivity">
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/backbtn"
+        android:contentDescription="You Are In Common Things Detector and It's A Back Button To Return The Main Menue"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+
+        />
+    <TextView
+        android:id="@+id/headertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Common Things"
+        android:textColor="#6E543C"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/backBtn"
+        android:layout_marginLeft="25dp"
+        android:textSize="35sp"/>
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_below="@id/headertxt"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="10dp"
+        android:layout_height="400dp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_below="@id/headertxt"
+        android:layout_height="400dp"
+
+        android:layout_marginVertical="10dp"
+        android:background="#000"
+        android:id="@+id/imageView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/takeImgBtn"
+        android:layout_width="150dp"
+        android:textColor="@color/black"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imageView"
+        android:background="@drawable/button_background3"
+        android:text="Take Image"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/resetBtn"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetBtn"
+        android:layout_width="150dp"
+        android:textColor="@color/black"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imageView"
+        android:background="@drawable/button_background3"
+        android:text="Reset"
+        android:layout_marginHorizontal="40dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/resetBtn"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/resultProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediction Here"
+            android:textColor="#5C4742"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

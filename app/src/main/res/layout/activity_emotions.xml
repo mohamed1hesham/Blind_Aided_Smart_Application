@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmotionsActivity">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/backbtn"
+        android:contentDescription="You Are In Emotions Detector and It's A Back Button To Return The Main Menue"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+
+        />
+    <TextView
+        android:id="@+id/headertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMOTIONS"
+        android:textColor="#6E543C"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/backBtn"
+        android:layout_marginLeft="55dp"
+        android:textSize="35sp"/>
+    <ImageView
+        android:id="@+id/capturedImg"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/headertxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        tools:src="@color/black" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/takeImgBtn"
+        android:layout_width="150dp"
+        android:textColor="@color/black"
+        android:layout_height="75dp"
+        android:layout_below="@+id/capturedImg"
+        android:background="@drawable/button_background3"
+        android:text="Take Image"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/takeImgBtn"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/resultProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediction Here"
+            android:textColor="#5C4742"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
